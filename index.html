@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+</head>
+
+<body>
+    <table class="table table-dark">
+        <tr>
+            <td colspan="4"><input id="output" type="text"></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit(7)">7</button></td>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit(8)">8</button></td>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit(9)">9</button></td>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit('*')">x</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit(4)">4</button></td>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit(5)">5</button></td>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit(6)">6</button></td>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit(1)">1</button></td>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit(2)">2</button></td>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit(3)">3</button></td>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit('+')">+</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-dark" onclick="const output = document.getElementById('output');output.value = eval(output.value)">=</button></td>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit(0)">0</button></td>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit('.')">.</button></td>
+            <td><button type="button" class="btn btn-dark" onclick="addDigit('/')">/</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>
