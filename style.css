@@ -1,29 +1,43 @@
+@font-face {
+    font-family: "Typo-Digit";
+    src: url("./typodigitdemo-vg9lv-webfont.woff") format("woff"),
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
-input[type=number] {
-    -moz-appearance: textfield;
-    text-align: right;
-}
+
 body {
     margin: 0px;
     background-color: black !important;
+    font-family: 'Typo-Digit' !important;
+    height: 100%;
 }
+
 .button {
     width: 100%;
 }
+
 .table {
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     max-width: 20%;
     text-align: center;
 }
-#output {
-    text-align: end;
+
+input {
+    text-align: right;
     width: 100%;
     background-color: var(--bs-table-bg);
     border: none;
     color: #ffffff;
+}
+
+.height20 {
+    height: 20px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
